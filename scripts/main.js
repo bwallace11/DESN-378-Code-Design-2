@@ -1,13 +1,26 @@
-// =============================================
-// DESN 378: Code + Design 2
-// Your JavaScript will live here.
-//
-// This file will grow throughout the quarter
-// as you learn to make the web behave.
-// =============================================
+  // Initialize Lucide Icons
+        lucide.createIcons();
 
-console.log('Portfolio loaded');
+        // Very minimal Modal Logic
+        const modal = document.getElementById('projectModal');
+        const titleEl = document.getElementById('modalTitle');
+        const descEl = document.getElementById('modalDesc');
 
-// Week 1: You'll add theme toggle code here
-// Week 2: You'll add localStorage persistence here
-// Week 3+: More to come...
+        function openModal(title, desc) {
+            titleEl.innerText = title;
+            descEl.innerText = desc;
+            modal.showModal();
+            // Prevent body scroll
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.close();
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal if clicking outside the content
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });

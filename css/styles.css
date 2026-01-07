@@ -1,52 +1,25 @@
-/* =============================================
-   DESN 378: Code + Design 2
-   Your portfolio styles go here.
+ body { font-family: 'Inter', sans-serif; }
+        
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #9b87d4; }
 
-   Replace this with your CSS from DESN 368
-   or start fresh with your own design.
-   ============================================= */
+        /* Animation utilities */
+        .fade-in { animation: fadeIn 1.5s ease-out forwards; opacity: 0; }
+        .delay-100 { animation-delay: 0.2s; }
+        .delay-200 { animation-delay: 0.4s; }
+        .delay-300 { animation-delay: 0.6s; }
 
-/* Basic reset and defaults */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-body {
-  font-family: system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  color: #1a1a1a;
-  background: #fafafa;
-}
-
-main {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-p {
-  margin-bottom: 1rem;
-  color: #666;
-}
-
-code {
-  background: #e5e5e5;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-family: 'SF Mono', Consolas, monospace;
-}
+        /* Glassmorphism utility */
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
