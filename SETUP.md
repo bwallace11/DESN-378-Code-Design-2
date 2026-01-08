@@ -7,27 +7,27 @@ You did the heavy lifting in DESN 368. This is just a quick check to make sure e
 ## ✅ Quick Checklist
 
 ### 1. Repository Created
-- [ ] Used "Use this template" (not fork)
-- [ ] Renamed to something professional (e.g., `desn378-portfolio` or `yourname-378`)
-- [ ] Repository is **public**
+- [✅] Used "Use this template" (not fork)
+- [✅] Renamed to something professional (e.g., `desn378-portfolio` or `yourname-378`)
+- [✅] Repository is **public**
 
 ### 2. Profile Consistency
-- [ ] Same **name** on GitHub, Figma, CodePen (First Last)
-- [ ] Same **profile photo** everywhere
-- [ ] [PROFILE.md](./PROFILE.md) updated with your links
+- [✅] Same **name** on GitHub, Figma, CodePen (First Last)
+- [✅] Same **profile photo** everywhere
+- [✅ ] [PROFILE.md](./PROFILE.md) updated with your links
 
 ### 3. GitHub Student Pack
-- [ ] Still active? → [Check here](https://education.github.com/pack)
+- [ ✅] Still active? → [Check here](https://education.github.com/pack)
 - [ ] If expired, reapply with current EWU credentials
 - [ ] Copilot enabled in VS Code
 
 ### 4. Figma Education
-- [ ] Still active? → [Check in Settings](https://www.figma.com/settings)
+- [ ✅] Still active? → [Check in Settings](https://www.figma.com/settings)
 - [ ] If expired, reapply: [figma.com/education](https://www.figma.com/education/apply)
-- [ ] Joined the DESN 378 team (link in Canvas)
+- [✅ ] Joined the DESN 378 team (link in Canvas)
 
 ### 5. VS Code Ready
-- [ ] GitHub Copilot extension installed
+- [ ✅] GitHub Copilot extension installed
 - [ ] Live Server extension installed
 - [ ] Prettier extension installed (recommended)
 
