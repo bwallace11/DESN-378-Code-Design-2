@@ -37,3 +37,12 @@ if (!localStorage.getItem("name")) {
 myButton.addEventListener("click", () => {
   setUserName();
 });
+
+/*
+  SUMMARY:
+  This file does two things:
+  1. The image toggles between color and black-and-white when clicked.
+  2. The second part prompts the user to enter their name, stores it in local storage, and personalizes the heading with that name.
+​
+  The key pattern I learned: I learned how to use local storage to save user preferences and how to update the DOM based on user interactions.
+*/
