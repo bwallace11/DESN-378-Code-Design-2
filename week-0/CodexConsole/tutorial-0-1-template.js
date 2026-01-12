@@ -37,10 +37,12 @@ console.log("2 1/2 cups whole milk");
 console.log("3/4 cup sugar");
 console.log("1/8 teaspoon salt");
 console.log("5 tablespoon cornstartch");
-console.log("1/4 cup unsalted butter");
 console.log("4 Bananas");
+console.log("4 large egg yolks");
 /*Secret Ingredient
+console.log("1/4 cup unsalted butter");
 console.log("2 teaspoons of real vanilla"); */
+//Whipped cream is optional but recommended!
 
 // --------------------------------------------
 // EXERCISE 5: RECEIPT
