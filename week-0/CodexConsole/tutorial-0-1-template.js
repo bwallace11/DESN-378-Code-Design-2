@@ -9,7 +9,7 @@
 // --------------------------------------------
 console.log("Hello internet!");
 // Add your custom greeting below:
-​console.log("Hey there!");
+​console.log("Hello there!");
 ​
 // --------------------------------------------
 // EXERCISE 2: THE CONSOLE
