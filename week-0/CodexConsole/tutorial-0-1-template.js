@@ -41,7 +41,7 @@ console.log("1/4 cup unsalted butter");
 console.log("4 Bananas");
 /*Secret Ingredient
 console.log("2 teaspoons of real vanilla"); */
-​
+
 // --------------------------------------------
 // EXERCISE 5: RECEIPT
 // Format a receipt from a recent purchase
@@ -49,13 +49,13 @@ console.log("2 teaspoons of real vanilla"); */
 console.log("==================================");
 console.log("         McDONALD'S RECEIPT       ");
 console.log("----------------------------------");
-console.log("         Order Details     ");
+console.log("         Order Details            ");
 console.log("----------------------------------");
-console.log("Item         Quantity      Price     ");
+console.log("Item         Quantity      Price  ");
 console.log("----------------------------------");
-console.log("Burger       1             2.99    ");
-console.log("Fries        1             2.49    ");
-console.log("Soda         1             1.99    ");
+console.log("Burger       1             2.99   ");
+console.log("Fries        1             2.49   ");
+console.log("Soda         1             1.99   ");
 console.log("----------------------------------");
 console.log("Total                      7.47   ");
 console.log("==================================");
