@@ -9,10 +9,10 @@ Update it once, keep it consistent everywhere.
 
 | Field | Value |
 |-------|-------|
-| **Name** | <!-- First Last --> |
-| **Preferred Name** | <!-- What should I call you? --> |
-| **Pronouns** | <!-- Optional --> |
-| **EWU Email** | <!-- @ewu.edu --> |
+| **Name** | Brittany|
+| **Preferred Name** | Brittany |
+| **Pronouns** | She her |
+| **EWU Email** | bwallace11@ewu.edu |
 
 ---
 
@@ -22,18 +22,18 @@ Update it once, keep it consistent everywhere.
 
 | Platform | Profile URL | Status |
 |----------|-------------|--------|
-| **GitHub** | `https://github.com/________` | ⏳ |
-| **Figma** | `@________` | ⏳ |
-| **CodePen** | `https://codepen.io/________` | ⏳ |
+| **GitHub** | `https://github.com/bwallace11` | ⏳ |
+| **Figma** | `https://www.figma.com/@brittany27` | ⏳ |
+| **CodePen** | `https://codepen.io/bwallace11` | ⏳ |
 | **Portfolio** | *Coming Week 10* | 🔲 |
 
 ---
 
 ## Profile Photo
 
-- [ ] Same photo uploaded to GitHub, Figma, and CodePen
-- [ ] Professional or at least *intentional*
-- [ ] Face visible (helps me learn names!)
+- [✅] Same photo uploaded to GitHub, Figma, and CodePen
+- [✅] Professional or at least *intentional*
+- [✅] Face visible (helps me learn names!)
 
 ---
 
@@ -62,7 +62,7 @@ Update it once, keep it consistent everywhere.
 ---
 
 ## About Me
-
+I am interested in learning as much as i can about front end web design. I love creepy horror things, obssessed with Cryptids especially mothman. I have really bad ADHD but I am learning to cope with it and live with it. I am currently in a weightloss program and love going to the gym. 
 *Optional: A sentence or two about your design interests. This could seed your eventual portfolio bio.*
 
 <!-- 
