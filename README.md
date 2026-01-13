@@ -1,7 +1,8 @@
 
 # DESN 378: Code + Design 2
 
-🔗 **[Learning Log](https://github.com/bwallace11/DESN-378-Code-Design-2)**
+🔗 **[Learning Log](https://bwallace11.github.io/DESN-378-Code-Design-2/)**
+
 🔗 **[DESN368 Portfolio](https://wallace-minportfolio.netlify.app/)** _FYI, this is just the URL to your repo; if it's still on Netlify, then use that. _
 
 ---
