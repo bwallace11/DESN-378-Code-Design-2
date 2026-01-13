@@ -10,16 +10,19 @@ fetch('https://api.github.com/repos/' + username + '/' + repo + '/git/trees/main
     
     const indexFiles = data.tree
       .filter(item => item.path.endsWith('index.html'))
-      .map(item => item.path.replace('index.html', ''));
+      .map(item => item.path.replace(/index\.html$/, '').replace(/\/$/, ''))
+      .filter(path => path !== '');
 
     const weeks = {};
     indexFiles.forEach(path => {
-      const parts = path.split('/');
+      const parts = path.split('/').filter(Boolean);
       if (parts.length === 2) {
-        const week = parts[0];
-        const project = parts[1];
+        const [week, project] = parts;
         if (!weeks[week]) weeks[week] = [];
         weeks[week].push(project);
+      } else if (parts.length === 1) {
+        const [week] = parts;
+        if (!weeks[week]) weeks[week] = [];
       }
     });
 
