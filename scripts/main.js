@@ -9,8 +9,8 @@ fetch('https://api.github.com/repos/' + username + '/' + repo + '/git/trees/main
     const nav = document.querySelector('nav');
     
     const indexFiles = data.tree
-      .filter(item => item.path.endsWith('/index.html'))
-      .map(item => item.path.replace('/index.html', ''));
+      .filter(item => item.path.endsWith('index.html'))
+      .map(item => item.path.replace('index.html', ''));
 
     const weeks = {};
     indexFiles.forEach(path => {
