@@ -8,7 +8,7 @@ myHeading.textContent = "Hello world!";
 
 myImage.addEventListener("click", () => {
   const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/firefox-icon.png") {
+  if (mySrc === "/images/daisy.png") {
     myImage.setAttribute("src", "images/daisybw.png");
   } else {
     myImage.setAttribute("src", "images/daisy.png");
