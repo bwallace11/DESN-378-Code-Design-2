@@ -3,18 +3,6 @@ let myHeading = document.querySelector("h1");
 let myButton = document.querySelector("button");
 const myImage = document.querySelector("img");
 
-// Update the text content of the <h1>
-myHeading.textContent = "Hello world!";
-
-myImage.addEventListener("click", () => {
-  const mySrc = myImage.getAttribute("src");
-  if (mySrc === "/images/daisy.png") {
-    myImage.setAttribute("src", "images/daisybw.png");
-  } else {
-    myImage.setAttribute("src", "images/daisy.png");
-  }
-});
-
 function setUserName() {
   const myName = prompt("Please enter your name.");
   if (!myName) {
@@ -25,6 +13,7 @@ function setUserName() {
   }
 }
 
+// Ask for name first when page loads
 if (!localStorage.getItem("name")) {
   setUserName();
 } else {
@@ -32,6 +21,17 @@ if (!localStorage.getItem("name")) {
   myHeading.textContent = `Arn't Daisies Just Beautiful?, ${storedName}`;
 }
 
+// Image click toggle
+myImage.addEventListener("click", () => {
+  const mySrc = myImage.getAttribute("src");
+  if (mySrc === "images/daisy.png") {
+    myImage.setAttribute("src", "images/daisybw.png");
+  } else {
+    myImage.setAttribute("src", "images/daisy.png");
+  }
+});
+
+// Button to change user
 myButton.addEventListener("click", () => {
   setUserName();
 });
