@@ -33,3 +33,13 @@ setupImageClick();
 myButton.addEventListener("click", () => {
   setUserName();
 });
+
+
+/*
+  SUMMARY:
+  This file does two things:
+  1. When you click on the picture it should switch between a color and black & white version of the daisy image.
+  2. When you first load the page (or click the button) it prompts you for your name and updates the heading to include your name.
+​
+  The key pattern I learned: event listeners and DOM manipulation.
+*/
