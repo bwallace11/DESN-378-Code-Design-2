@@ -22,8 +22,44 @@ This is my workspace for **DESN 378 Code + Design 2** also known as **Web Design
 ---
 
 ## Learning Log
-
-Update this section each week with observations, breakthroughs, and questions.
+# Learning Log
+​
+## Week 1
+​
+### What I Learned
+<!-- What concepts clicked for you? What was new? -->
+The only new thing for me is Github, Im still learning it and not quite sure about everything.
+​
+​
+### What Was Hard
+<!-- What frustrated you? What didn't make sense? -->
+​I did'nt get really get fustrated with anything other then not knowing how to link Github, still dont know exactly.
+​
+### How I Used AI
+<!-- Did you use Copilot, ChatGPT, etc.? How did it help or not help? -->
+​I didn't use any AI for this, this is stuff I already knew coming into the class. I did use Wschools a little though
+​
+### What's Still Unclear
+<!-- What questions do you still have? What needs more practice? -->
+​I just need to get use to Github and will need help with the Github links.
+​
+### Work Completed (Week 0)
+​
+**Engage**
+- [x] Portfolio Audit
+​
+**Learn**
+- [x] Console Explorer
+- [x] Codedex Console Fundamentals
+​
+**Reflect**
+- [x] Visual Notes: Variables and Strings
+​
+**Build**
+- [ ] The Setup
+- [x] The Behavioral Layer
+​
+---
 
 ### Week 1: Systems That Respond
 *Coming soon...*
