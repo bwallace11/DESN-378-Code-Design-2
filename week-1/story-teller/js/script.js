@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
  
     const clickSound = document.querySelector('#pop-sound');
     const sparkleSound = document.querySelector('#sparkle-sound');
+    const neonSound = document.querySelector('#neon-sound');
     const decorationContainer = document.querySelector('#decoration-container');
 
     // --- STATE ---
@@ -288,19 +289,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderFinale() {
-        if(finalMessage) finalMessage.textContent = `Happy Valentine's Day, ${userName}!`;
-        if(finaleSection) {
-            finaleSection.classList.remove('hidden');
-            void finaleSection.offsetWidth;
-            finaleSection.classList.add('active');
-        }
+    if(finalMessage) finalMessage.textContent = `Happy Valentine's Day, ${userName}!`;
+    
+    if(finaleSection) {
+        finaleSection.classList.remove('hidden');
+        void finaleSection.offsetWidth;
+        finaleSection.classList.add('active');
     }
 
-    function resetStory() {
-        localStorage.removeItem('loveInFog_Name');
-        localStorage.removeItem('loveInFog_Step');
-        location.reload();
+ 
+    if (neonSound) {
+        neonSound.volume = 0.05; 
+        neonSound.currentTime = 0;
+        
+      
+        neonSound.play().catch(e => console.log("Autoplay blocked", e));
     }
+}
+
+   function resetStory() {
+   
+    if (neonSound) {
+        neonSound.pause();
+        neonSound.currentTime = 0;
+    }
+    
+
+    localStorage.removeItem('loveInFog_Name');
+    localStorage.removeItem('loveInFog_Step');
+    location.reload();
+}
 
     // --- LISTENERS ---
     if(startBtn) startBtn.addEventListener('click', () => startStory(false));
@@ -314,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if(storyImage) storyImage.addEventListener('click', handleInteraction);
     if(storyText) storyText.addEventListener('click', handleInteraction);
-    
+
     if(resetBtn) resetBtn.addEventListener('click', resetStory);
 
     // Run
