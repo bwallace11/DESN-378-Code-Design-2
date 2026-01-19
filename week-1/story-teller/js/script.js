@@ -2,11 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const storyData = [
         { image: "./assets/images/M&NVD1.jpg", text: "As the sun dipped low, the lake glowed with soft pink and gold light..." },
-        { image: "./assets/images/M&NVD2.jpg", text: "They moved slowly along the lake’s edge, side by side..." },
+        { image: "./assets/images/M&NVD2.jpg", text: "They moved slowly along the lake's edge, side by side..." },
         { image: "./assets/images/M&NVD3.jpg", text: "As the sun faded into the hills, Mothman lifted his wings..." },
         { image: "./assets/images/M&NVD4.jpg", text: "The sky filled with soft, glowing hearts..." },
         { image: "./assets/images/M&NVD5.jpg", text: "Mothman wrapped his wings around Nessie..." }
     ];
+
+    // In-memory storage instead of localStorage
+    let appState = {
+        userName: "Mysterious Traveler",
+        step: 0
+    };
 
     const intro = document.getElementById('intro-section');
     const story = document.getElementById('story-section');
@@ -25,8 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const neonSound = document.getElementById('neon-sound');
     const decorationContainer = document.getElementById('decoration-container');
 
-    let step = 0;
-    let userName = "Mysterious Traveler";
     let typingInterval;
 
     function typeWriter(text) {
@@ -42,13 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showScene() {
-        if (step >= storyData.length) {
+        if (appState.step >= storyData.length) {
             showFinale();
             return;
         }
 
-        storyImage.src = storyData[step].image;
-        typeWriter(storyData[step].text);
+        storyImage.src = storyData[appState.step].image;
+        typeWriter(storyData[appState.step].text);
         updateDots();
     }
 
@@ -56,10 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
         dotsContainer.innerHTML = "";
         storyData.forEach((_, i) => {
             const dot = document.createElement('div');
-            dot.className = "dot" + (i === step ? " active" : "");
+            dot.className = "dot" + (i === appState.step ? " active" : "");
             dot.onclick = () => {
-                step = i;
-                save();
+                appState.step = i;
                 showScene();
             };
             dotsContainer.appendChild(dot);
@@ -68,41 +71,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateDots() {
         document.querySelectorAll('.dot').forEach((dot, i) => {
-            dot.classList.toggle('active', i === step);
+            dot.classList.toggle('active', i === appState.step);
         });
     }
 
-    function save() {
-        localStorage.setItem('fog_name', userName);
-        localStorage.setItem('fog_step', step);
-    }
-
     function start() {
-        userName = nameInput.value.trim() || userName;
+        appState.userName = nameInput.value.trim() || appState.userName;
         intro.classList.add('hidden');
         story.classList.remove('hidden');
-        save();
         showScene();
     }
 
     function next() {
-        step++;
-        save();
+        appState.step++;
         showScene();
     }
 
     function showFinale() {
         story.classList.add('hidden');
         finale.classList.remove('hidden');
-        finalMessage.textContent = `Happy Valentine's Day, ${userName}!`;
+        finalMessage.textContent = `Happy Valentine's Day, ${appState.userName}!`;
 
         neonSound.volume = 0.05;
         neonSound.play().catch(() => {});
     }
 
     function reset() {
-        localStorage.clear();
-        location.reload();
+        appState = {
+            userName: "Mysterious Traveler",
+            step: 0
+        };
+        intro.classList.remove('hidden');
+        story.classList.add('hidden');
+        finale.classList.add('hidden');
+        nameInput.value = '';
     }
 
     function createDecorations() {
@@ -112,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             img.className = "floating-element heart-anim";
             img.style.left = Math.random() * 100 + "vw";
             img.style.width = "40px";
+            img.style.animationDelay = Math.random() * 5 + "s";
             decorationContainer.appendChild(img);
         }
     }
@@ -123,15 +126,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     createDots();
     createDecorations();
-
-    const savedName = localStorage.getItem('fog_name');
-    const savedStep = localStorage.getItem('fog_step');
-
-    if (savedName) {
-        userName = savedName;
-        step = Number(savedStep) || 0;
-        intro.classList.add('hidden');
-        story.classList.remove('hidden');
-        showScene();
-    }
 });
