@@ -108,16 +108,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function createDecorations() {
-        for (let i = 0; i < 10; i++) {
-            const img = document.createElement('img');
-            img.src = "./assets/images/Heart.png";
-            img.className = "floating-element heart-anim";
-            img.style.left = Math.random() * 100 + "vw";
-            img.style.width = "40px";
-            img.style.animationDelay = Math.random() * 5 + "s";
-            decorationContainer.appendChild(img);
-        }
+    // Create floating hearts
+    for (let i = 0; i < 10; i++) {
+        const img = document.createElement('img');
+        img.src = "./assets/images/Heart.png";
+        img.className = "floating-element heart-anim";
+        img.style.left = Math.random() * 100 + "vw";
+        img.style.width = "40px";
+        img.style.animationDelay = Math.random() * 5 + "s";
+        decorationContainer.appendChild(img);
     }
+
+    // Create sparkles
+    for (let i = 0; i < 15; i++) {
+        const sparkle = document.createElement('img');
+        sparkle.src = "./assets/images/sparkle3.png";
+        sparkle.className = "floating-element sparkle-anim";
+        sparkle.style.left = Math.random() * 100 + "vw";
+        sparkle.style.top = Math.random() * 100 + "vh";
+        sparkle.style.width = "30px";
+        sparkle.style.animationDelay = Math.random() * 3 + "s";
+        
+        // Optional: Add sparkle sound on click
+        sparkle.onclick = () => {
+            sparkleSound.currentTime = 0;
+            sparkleSound.volume = 0.3;
+            sparkleSound.play().catch(() => {});
+        };
+        
+        decorationContainer.appendChild(sparkle);
+    }
+}
 
     startBtn.onclick = start;
     storyImage.onclick = next;
