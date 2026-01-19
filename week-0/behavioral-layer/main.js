@@ -1,4 +1,3 @@
-// Store references to DOM elements
 let myHeading = document.querySelector("h1");
 let myButton = document.querySelector("button");
 let myImage = document.querySelector("img");
@@ -12,10 +11,10 @@ function setUserName() {
   }
 }
 
-// Ask for name when page loads
+
 setUserName();
 
-// Image click toggle
+
 function setupImageClick() {
   myImage.addEventListener("click", () => {
     const mySrc = myImage.getAttribute("src");
@@ -29,7 +28,7 @@ function setupImageClick() {
 
 setupImageClick();
 
-// Button to change user
+
 myButton.addEventListener("click", () => {
   setUserName();
 });

@@ -95,10 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- DECORATION LOGIC ---
     function generateDecorations() {
         for (let i = 0; i < 15; i++) {
-            createFloatingElement('assets/images/Heart.png', 'heart-anim', 30, 80);
+            createFloatingElement('/week-1/story-teller/assets/images/Heart.png', 'heart-anim', 30, 80);
         }
         for (let i = 0; i < 15; i++) {
-            const sparkle = createFloatingElement('assets/images/sparkle2.png', 'sparkle-anim', 20, 60);
+            const sparkle = createFloatingElement('/week-1/story-teller/assets/images/sparkle3.png', 'sparkle-anim', 20, 60);
             
             sparkle.addEventListener('click', () => {
                 if(sparkleSound) {
