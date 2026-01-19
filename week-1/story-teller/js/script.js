@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const storyData = [
-        { image: "assets/images/M&NVD1.jpg", text: "As the sun dipped low, the lake glowed with soft pink and gold light..." },
-        { image: "assets/images/M&NVD2.jpg", text: "They moved slowly along the lake’s edge, side by side..." },
-        { image: "assets/images/M&NVD3.jpg", text: "As the sun faded into the hills, Mothman lifted his wings..." },
-        { image: "assets/images/M&NVD4.jpg", text: "The sky filled with soft, glowing hearts..." },
-        { image: "assets/images/M&NVD5.jpg", text: "Mothman wrapped his wings around Nessie..." }
+        { image: "./assets/images/M&NVD1.jpg", text: "As the sun dipped low, the lake glowed with soft pink and gold light..." },
+        { image: "./assets/images/M&NVD2.jpg", text: "They moved slowly along the lake’s edge, side by side..." },
+        { image: "./assets/images/M&NVD3.jpg", text: "As the sun faded into the hills, Mothman lifted his wings..." },
+        { image: "./assets/images/M&NVD4.jpg", text: "The sky filled with soft, glowing hearts..." },
+        { image: "./assets/images/M&NVD5.jpg", text: "Mothman wrapped his wings around Nessie..." }
     ];
 
     const intro = document.getElementById('intro-section');
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createDecorations() {
         for (let i = 0; i < 10; i++) {
             const img = document.createElement('img');
-            img.src = "assets/images/Heart.png";
+            img.src = "./assets/images/Heart.png";
             img.className = "floating-element heart-anim";
             img.style.left = Math.random() * 100 + "vw";
             img.style.width = "40px";
