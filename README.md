@@ -63,7 +63,39 @@ The only new thing for me is Github, Im still learning it and not quite sure abo
 ---
 
 ### Week 1: Systems That Respond
-*Coming soon...*
+## Week 1
+​
+### What I Learned
+I know some basic JavaScript so I understood some of that, I still struggle with some concepts in my head but that is just my ADHD, when I see it clicks. Its Just remembering
+I also forget Var isnt a thing anymore and its LET.
+​
+​
+### What Was Hard
+The only thing that fustrates me is that I get lost in my own head sometimes and forget what things mean or do untill im actually doing it.
+​
+​
+### How I Used AI
+I use ai when I really want something like how to impliment sound, or Falling hearts.
+​
+​
+### What's Still Unclear
+I still just need more practice with Github and just remembering terms.
+​
+### Work Completed (Week 1)
+​
+**Engage**
+- [x] Portfolio Audit
+​
+**Learn**
+- [x] Console Explorer
+- [x] Codedex Console Fundamentals
+​
+**Reflect**
+- [x] Visual Notes: Variables and Strings
+​
+**Build**
+- [x] The Setup
+- [x] The Behavioral Layer (still working on it)
 
 ### Week 2: Remembering Choices
 *Coming soon...*
