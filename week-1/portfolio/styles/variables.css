@@ -1,0 +1,47 @@
+/* CSS Variables - Theme System */
+
+:root {
+  /* Dark Mode (Default) */
+  --background-base: #0B0B0F;
+  --surface-card: #14141A;
+  --soft-surface: #1C1C24;
+  --dividers-borders: #2A2A36;
+  
+  --primary-purple: #A78BFA;
+  --accent: #C4B5FD;
+  --hover-active: #8B5CF6;
+  --glow-highlight: #6D28D9;
+  
+  --text-primary: #F4F3FA;
+  --text-secondary: #B7B5C8;
+  --text-caption: #8E8BA3;
+  
+  --button-background: #A78BFA;
+  --button-text: #0B0B0F;
+  --input-background: #14141A;
+  --input-border: #2A2A36;
+  --focus-ring: #A78BFA;
+}
+
+[data-theme="light"] {
+  /* Light Mode */
+  --background-base: #F4F2F9;
+  --surface-card: #FFFFFF;
+  --soft-surface: #EEEAF6;
+  --dividers-borders: #D6D1EB;
+  
+  --primary-purple: #8E7CCB;
+  --accent: #DDD6F3;
+  --hover-active: #7A67B8;
+  --glow-highlight: #C9C3E2;
+  
+  --text-primary: #1E1B2E;
+  --text-secondary: #5B5672;
+  --text-caption: #8B86A3;
+  
+  --button-background: #8E7CCB;
+  --button-text: #FFFFFF;
+  --input-background: #FFFFFF;
+  --input-border: #D6D1EB;
+  --focus-ring: #8E7CCB;
+}
