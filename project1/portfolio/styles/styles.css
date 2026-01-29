@@ -1,4 +1,8 @@
+@import url('variables.css');
+
 /* Base Styles */
+
+
 body {
   font-family: 'Satoshi', 'Spectral', sans-serif;
   background: var(--background-base);
