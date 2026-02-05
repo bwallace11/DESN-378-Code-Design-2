@@ -33,10 +33,75 @@
         <div class="absolute bottom-20 right-20 w-[600px] h-[600px] rounded-full blur-[120px] opacity-40" style="background: var(--accent); opacity: 0.15;"></div>
     </div>
 
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">
-        💡
+
+<!-- Preferences Hamburger Menu (TOP RIGHT) -->
+<div class="pref-menu">
+  <button
+    id="prefBtn"
+    class="hamburger pref-hamburger"
+    aria-label="Preferences"
+    aria-expanded="false"
+    aria-controls="prefDropdown"
+  >
+    <span class="hamburger-lines"></span>
+  </button>
+
+  <div id="prefDropdown" class="pref-dropdown" hidden>
+    <button class="pref-item" data-theme-set="dark">
+      <span class="icon-slot"><img src="assets/images/DarkMode.svg" alt="Dark Mode Icon" ></span>
+      Dark
     </button>
+
+    <button class="pref-item" data-theme-set="light">
+      <span class="icon-slot"><img src="assets/images/LightMode.svg" alt="Light Mode Icon"></span>
+      Light
+    </button>
+
+   <button
+  class="pref-item"
+  id="reduceMotionToggle"
+  aria-pressed="false">
+  <span class="icon-slot"><svg
+  class="icon"
+  viewBox="0 0 24 24"
+  fill="none"
+  aria-hidden="true"
+>
+  <!-- strongest motion -->
+  <path
+    d="M3 7h12"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="1"
+  />
+
+  <!-- medium motion -->
+  <path
+    d="M3 11h9"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.6"
+  />
+
+  <!-- almost stopped -->
+  <path
+    d="M3 15h6"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.3"
+  />
+</svg>
+</span>
+  Reduced Motion
+  <span class="check">✓</span>
+</button>
+  </div>
+</div>
+   
+ 
 
     <!-- Side Navigation -->
     <nav class="fixed right-6 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-6">

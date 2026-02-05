@@ -21,6 +21,10 @@
   --input-background: #14141A;
   --input-border: #2A2A36;
   --focus-ring: #A78BFA;
+   .icon-slot img {
+  filter: brightness(0) invert(1);
+}
+
 }
 
 [data-theme="light"] {
@@ -44,4 +48,7 @@
   --input-background: #FFFFFF;
   --input-border: #D6D1EB;
   --focus-ring: #8E7CCB;
+  .icon-slot img {
+  filter: none;
+}
 }
