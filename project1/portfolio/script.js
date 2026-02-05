@@ -16,8 +16,16 @@ const root = document.documentElement;
 // ===============================
 
 // Load saved theme or default to dark
-const savedTheme = localStorage.getItem("theme") || "dark";
-root.setAttribute("data-theme", savedTheme);
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark" || savedTheme === "light") {
+  // User already chose
+  root.setAttribute("data-theme", savedTheme);
+} else {
+  // First-time visitor → use system preference
+  const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  root.setAttribute("data-theme", systemDark ? "dark" : "light");
+}
 
 
 // ===============================
