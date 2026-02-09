@@ -182,17 +182,29 @@ if (prefBtn && prefDropdown) {
     prefDropdown.hidden = open;
   });
 
-  // Theme switching
-  document.querySelectorAll("[data-theme-set]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const theme = btn.getAttribute("data-theme-set");
+ // Theme switching
+document.querySelectorAll("[data-theme-set]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const theme = btn.getAttribute("data-theme-set");
+
+    if (theme === "system") {
+      // Clear manual choice
+      localStorage.removeItem("theme");
+
+      // Re-evaluate system preference
+      const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      root.setAttribute("data-theme", systemDark ? "dark" : "light");
+    } else {
+      // Manual override
       root.setAttribute("data-theme", theme);
       localStorage.setItem("theme", theme);
+    }
 
-      prefDropdown.hidden = true;
-      prefBtn.setAttribute("aria-expanded", "false");
-    });
+    prefDropdown.hidden = true;
+    prefBtn.setAttribute("aria-expanded", "false");
   });
+});
+
 
 const reduceBtn = document.getElementById("reduceMotionToggle");
 

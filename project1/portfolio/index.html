@@ -48,20 +48,158 @@
 
   <div id="prefDropdown" class="pref-dropdown" hidden>
     <button class="pref-item" data-theme-set="dark">
-      <span class="icon-slot"><img src="assets/images/DarkMode.svg" alt="Dark Mode Icon" ></span>
+      <span class="icon-slot"><!--Dark Mode-->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main bulb shape -->
+  <path d="M12 3C9.2 3 7 5.2 7 8C7 9.5 7.6 10.8 8.5 11.8C9.2 12.6 9.5 13.5 9.5 14.5V16H14.5V14.5C14.5 13.5 14.8 12.6 15.5 11.8C16.4 10.8 17 9.5 17 8C17 5.2 14.8 3 12 3Z" 
+        stroke="currentColor" 
+        stroke-width="1.5"
+        fill="none"/>
+  
+  <!-- Filament -->
+  <path d="M10.5 9C10.5 9 11 8 12 8C13 8 13.5 9 13.5 9" 
+        stroke="currentColor" 
+        stroke-width="1" 
+        fill="none" 
+        stroke-linecap="round"/>
+  <line x1="12" y1="8" x2="12" y2="6.5" stroke="currentColor" stroke-width="1"/>
+  
+  <!-- Screw base threads -->
+  <line x1="9.5" y1="16" x2="14.5" y2="16" stroke="currentColor" stroke-width="1"/>
+  <line x1="9.5" y1="17.5" x2="14.5" y2="17.5" stroke="currentColor" stroke-width="1"/>
+  <line x1="9.5" y1="19" x2="14.5" y2="19" stroke="currentColor" stroke-width="1"/>
+  
+  <!-- Base outline -->
+  <path d="M9.5 16 L9.5 19.5 L14.5 19.5 L14.5 16" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  
+  <!-- Bottom contact -->
+  <line x1="10.5" y1="20.5" x2="13.5" y2="20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+</span>
       Dark
     </button>
 
     <button class="pref-item" data-theme-set="light">
-      <span class="icon-slot"><img src="assets/images/LightMode.svg" alt="Light Mode Icon"></span>
+      <span class="icon-slot"><!--Light Mode-->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main bulb shape -->
+  <path d="M12 3C9.2 3 7 5.2 7 8C7 9.5 7.6 10.8 8.5 11.8C9.2 12.6 9.5 13.5 9.5 14.5V16H14.5V14.5C14.5 13.5 14.8 12.6 15.5 11.8C16.4 10.8 17 9.5 17 8C17 5.2 14.8 3 12 3Z" 
+        stroke="currentColor" 
+        stroke-width="1.5"
+        fill="none"/>
+  
+  <!-- Filament -->
+  <path d="M10.5 9C10.5 9 11 8 12 8C13 8 13.5 9 13.5 9" 
+        stroke="currentColor" 
+        stroke-width="1" 
+        fill="none" 
+        stroke-linecap="round"/>
+  <line x1="12" y1="8" x2="12" y2="6.5" stroke="currentColor" stroke-width="1"/>
+  
+  <!-- Light rays -->
+  <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+    <line x1="12" y1="2" x2="12" y2="0.5"/>
+    <line x1="17.5" y1="4" x2="18.5" y2="3"/>
+    <line x1="19.5" y1="8.5" x2="21" y2="8.5"/>
+   
+    <line x1="6.5" y1="4" x2="5.5" y2="3"/>
+    
+    <line x1="4.5" y1="8.5" x2="3" y2="8.5"/>
+  </g>
+  
+  <!-- Screw base threads -->
+  <line x1="9.5" y1="16" x2="14.5" y2="16" stroke="currentColor" stroke-width="1"/>
+  <line x1="9.5" y1="17.5" x2="14.5" y2="17.5" stroke="currentColor" stroke-width="1"/>
+  <line x1="9.5" y1="19" x2="14.5" y2="19" stroke="currentColor" stroke-width="1"/>
+  
+  <!-- Base outline -->
+  <path d="M9.5 16 L9.5 19.5 L14.5 19.5 L14.5 16" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  
+  <!-- Bottom contact -->
+  <line x1="10.5" y1="20.5" x2="13.5" y2="20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+</span>
       Light
     </button>
+
+<button class="pref-item" data-theme-set="system">
+
+      <span class="icon-slot">
+<!--System Pref-->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="rightHalf">
+      <rect x="12" y="0" width="12" height="24"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Main bulb shape -->
+  <path d="M12 3C9.2 3 7 5.2 7 8C7 9.5 7.6 10.8 8.5 11.8C9.2 12.6 9.5 13.5 9.5 14.5V16H14.5V14.5C14.5 13.5 14.8 12.6 15.5 11.8C16.4 10.8 17 9.5 17 8C17 5.2 14.8 3 12 3Z" 
+        stroke="currentColor" 
+        stroke-width="1.5"
+        fill="none"/>
+  
+  <!-- Center dividing line -->
+  <line x1="12" y1="0" x2="12" y2="16" stroke="currentColor" stroke-width="1"/>
+  
+  <!-- Filament -->
+  <path d="M10.5 9C10.5 9 11 8 12 8C13 8 13.5 9 13.5 9" 
+        stroke="currentColor" 
+        stroke-width="1" 
+        fill="none" 
+        stroke-linecap="round"/>
+  <line x1="12" y1="8" x2="12" y2="6.5" stroke="currentColor" stroke-width="1"/>
+  
+  <!-- Light rays (right side only) -->
+  <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" clip-path="url(#rightHalf)">
+
+    <line x1="12" y1="2" x2="12" y2="0.5"/>
+    <line x1="17.5" y1="4" x2="18.5" y2="3"/>
+    <line x1="19.5" y1="8.5" x2="21" y2="8.5"/>
+  </g>
+  
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main bulb shape -->
+  <path d="M12 3C9.2 3 7 5.2 7 8C7 9.5 7.6 10.8 8.5 11.8C9.2 12.6 9.5 13.5 9.5 14.5V16H14.5V14.5C14.5 13.5 14.8 12.6 15.5 11.8C16.4 10.8 17 9.5 17 8C17 5.2 14.8 3 12 3Z" 
+        stroke="currentColor" 
+        stroke-width="1.5"
+        fill="none"/>
+  
+  <!-- Filament -->
+  <path d="M10.5 9C10.5 9 11 8 12 8C13 8 13.5 9 13.5 9" 
+        stroke="currentColor" 
+        stroke-width="1" 
+        fill="none" 
+        stroke-linecap="round"/>
+  <line x1="12" y1="8" x2="12" y2="6.5" stroke="currentColor" stroke-width="1"/>
+  
+  <!-- Screw base threads -->
+  <line x1="9.5" y1="16" x2="14.5" y2="16" stroke="currentColor" stroke-width="1"/>
+  <line x1="9.5" y1="17.5" x2="14.5" y2="17.5" stroke="currentColor" stroke-width="1"/>
+  <line x1="9.5" y1="19" x2="14.5" y2="19" stroke="currentColor" stroke-width="1"/>
+  
+  <!-- Base outline -->
+  <path d="M9.5 16 L9.5 19.5 L14.5 19.5 L14.5 16" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  
+  <!-- Bottom contact -->
+  <line x1="10.5" y1="20.5" x2="13.5" y2="20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+  
+  <!-- Center line through base -->
+  <line x1="12" y1="16" x2="12" y2="19.5" stroke="currentColor" stroke-width="1"/>
+  
+</svg>
+</span>
+      System Preference
+    </button>
+
 
    <button
   class="pref-item"
   id="reduceMotionToggle"
   aria-pressed="false">
-  <span class="icon-slot"><svg
+  <span class="icon-slot">
+    <svg
   class="icon"
   viewBox="0 0 24 24"
   fill="none"
