@@ -1,8 +1,3 @@
-
-// ===============================
-// INITIALIZE
-// ===============================
-
 // Initialize Lucide Icons
 lucide.createIcons();
 
