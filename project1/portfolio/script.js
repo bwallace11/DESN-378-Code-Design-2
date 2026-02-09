@@ -1,6 +1,4 @@
 
-
-
 // ===============================
 // INITIALIZE
 // ===============================
@@ -27,6 +25,16 @@ if (savedTheme === "dark" || savedTheme === "light") {
   root.setAttribute("data-theme", systemDark ? "dark" : "light");
 }
 
+const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+mediaQuery.addEventListener("change", (e) => {
+  const savedTheme = localStorage.getItem("theme");
+
+  // Only react if user is in "system" mode
+  if (!savedTheme) {
+    root.setAttribute("data-theme", e.matches ? "dark" : "light");
+  }
+});
 
 // ===============================
 // MODAL LOGIC
@@ -182,52 +190,58 @@ if (prefBtn && prefDropdown) {
     prefDropdown.hidden = open;
   });
 
- // Theme switching
-document.querySelectorAll("[data-theme-set]").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const theme = btn.getAttribute("data-theme-set");
+  // Theme switching
+  document.querySelectorAll("[data-theme-set]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const theme = btn.getAttribute("data-theme-set");
 
-    if (theme === "system") {
-      // Clear manual choice
-      localStorage.removeItem("theme");
+      if (theme === "system") {
+        // Clear manual choice to enable system preference mode
+        localStorage.removeItem("theme");
 
-      // Re-evaluate system preference
-      const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      root.setAttribute("data-theme", systemDark ? "dark" : "light");
-    } else {
-      // Manual override
-      root.setAttribute("data-theme", theme);
-      localStorage.setItem("theme", theme);
-    }
+        // Force re-evaluation of system preference immediately
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const newTheme = systemDark ? "dark" : "light";
+        
+        console.log("System preference detected:", newTheme);
+        root.setAttribute("data-theme", newTheme);
+      } else {
+        // Manual override (dark or light)
+        root.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+        console.log("Manual theme set:", theme);
+      }
 
-    prefDropdown.hidden = true;
-    prefBtn.setAttribute("aria-expanded", "false");
+      prefDropdown.hidden = true;
+      prefBtn.setAttribute("aria-expanded", "false");
+    });
   });
-});
 
+  // Reduced Motion Toggle
+  const reduceBtn = document.getElementById("reduceMotionToggle");
 
-const reduceBtn = document.getElementById("reduceMotionToggle");
+  function syncReducedMotionUI() {
+    if (!reduceBtn) return;
+    const isOn = root.getAttribute("data-reduce-motion") === "true";
 
-function syncReducedMotionUI() {
-  if (!reduceBtn) return;
-  const isOn = root.getAttribute("data-reduce-motion") === "true";
+    reduceBtn.classList.toggle("active", isOn);
+    reduceBtn.setAttribute("aria-pressed", String(isOn));
+  }
 
-  reduceBtn.classList.toggle("active", isOn);
-  reduceBtn.setAttribute("aria-pressed", String(isOn));
-}
-
-if (reduceBtn) {
-  // initial state sync
-  syncReducedMotionUI();
-
-  reduceBtn.addEventListener("click", () => {
-    const current = root.getAttribute("data-reduce-motion") === "true";
-    const next = (!current).toString();
-
-    root.setAttribute("data-reduce-motion", next);
-    localStorage.setItem("reduceMotion", next);
-
+  if (reduceBtn) {
+    // Initial state sync
     syncReducedMotionUI();
-  });
-}
+
+    reduceBtn.addEventListener("click", () => {
+      const current = root.getAttribute("data-reduce-motion") === "true";
+      const next = (!current).toString();
+
+      console.log("Reduced motion toggled to:", next);
+      
+      root.setAttribute("data-reduce-motion", next);
+      localStorage.setItem("reduceMotion", next);
+
+      syncReducedMotionUI();
+    });
+  }
 }
