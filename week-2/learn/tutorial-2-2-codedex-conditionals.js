@@ -78,30 +78,30 @@ if (ph > 7 ) {
 // --------------------------------------------
 ​
 
-​const question = "Will I finish my homework today?";
+
+let question = prompt("Ask the Magic 8 Ball a yes or no question:");
+
+let randomNumber = Math.floor(Math.random() * 5) + 1;
+
+let answer;
 
 
-const answers = [
-  "Yes - definitely.",
-  "It is decidedly so.",
-  "Without a doubt.",
-  "Reply hazy, try again.",
-  "Ask again later.",
-  "Better not tell you now.",
-  "My sources say no.",
-  "Outlook not so good.",
-  "Very doubtful."
-];
+if (randomNumber === 1) {
+  answer = "Yes, definitely.";
+} else if (randomNumber === 2) {
+  answer = "No way.";
+} else if (randomNumber === 3) {
+  answer = "Maybe... try again.";
+} else if (randomNumber === 4) {
+  answer = "It is certain.";
+} else {
+  answer = "I don't think so.";
+}
 
-
-const randomNumber = Math.floor(Math.random() * answers.length);
-const answer = answers[randomNumber];
-
-
-console.log(`Question:     ${question}`);
-console.log(`Magic 8 Ball: ${answer}`);
+console.log("You asked: " + question);
+console.log("Magic 8 Ball says: " + answer);
 ​
-​
+
 // --------------------------------------------
 // EXERCISE 16: AIR QUALITY INDEX
 // Check AQI ranges using logical operators
@@ -134,27 +134,50 @@ if (aqi >= 0 && aqi <= 50) {
 // --------------------------------------------
 ​
 
-const player = 2; 
 
-const computer = Math.floor(Math.random() * 3);
+let userChoice = prompt("Choose rock, paper, or scissors:");
 
-function choiceName(choice) {
-  if (choice === 0) return "Rock";
-  if (choice === 1) return "Paper";
-  return "Scissors";
-}
 
-console.log(`Player picked:      ${choiceName(player)}`);
-console.log(`Computer picked:    ${choiceName(computer)}`);
+userChoice = userChoice.toLowerCase();
 
-if (player === computer) {
-  console.log("It's a tie!");
-} else if (
-  (player === 0 && computer === 2) ||
-  (player === 1 && computer === 0) ||
-  (player === 2 && computer === 1)
-) {
-  console.log("The player won!");
+
+let rNumber = Math.floor(Math.random() * 3) + 1;
+
+let computerChoice;
+
+if (rNumber === 1) {
+  computerChoice = "rock";
+} else if (rNumber === 2) {
+  computerChoice = "paper";
 } else {
-  console.log("The computer won!");
+  computerChoice = "scissors";
 }
+
+let result;
+
+
+if (userChoice === computerChoice) {
+  result = "It's a tie!";
+} 
+else if (
+  (userChoice === "rock" && computerChoice === "scissors") ||
+  (userChoice === "paper" && computerChoice === "rock") ||
+  (userChoice === "scissors" && computerChoice === "paper")
+) {
+  result = "You win!";
+} 
+else if (
+  userChoice === "rock" ||
+  userChoice === "paper" ||
+  userChoice === "scissors"
+) {
+  result = "You lose!";
+} 
+else {
+  result = "That is not a valid choice.";
+}
+
+
+console.log("You chose: " + userChoice);
+console.log("Computer chose: " + computerChoice);
+console.log(result);
