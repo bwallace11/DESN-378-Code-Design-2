@@ -23,84 +23,223 @@ This is my workspace for **DESN 378 Code + Design 2** also known as **Web Design
 ---
 
 ## Learning Log
+
+## Week 0
+​
+### What I Learned
+<!-- What concepts clicked for you? What was new? -->
+This week was mostly review for me. A lot of the JavaScript basics like variables and strings were things I had already seen before, so nothing felt completely new. What did click more was how everything connects together. Instead of just knowing what a variable is, I started thinking more about why I’m using it and how it controls what happens on the page.
+
+GitHub was really the only new thing. I understand the idea of repositories and pushing code, but I don’t feel fully confident with it yet.
+​
+​
+### What Was Hard
+<!-- What frustrated you? What didn't make sense? -->
+The only part that really slowed me down was linking GitHub correctly. It wasn’t frustrating in a huge way, but it’s still not something I can do automatically without double checking.
+
+Other than that, the concepts themselves made sense.
+​
+### How I Used AI
+<!-- Did you use Copilot, ChatGPT, etc.? How did it help or not help? -->
+I didn’t use AI this week. Since this was mostly review, I relied on what I already knew. I did use W3Schools a little to double check small things.
+​
+### What's Still Unclear
+<!-- What questions do you still have? What needs more practice? -->
+I just need more practice using GitHub and understanding how linking works. That’s the part I’m still shaky on.
+​
+### Work Completed (Week 0)
+​
+**Engage**
+- [✔] Portfolio Audit
+​
+**Learn**
+- [✔] Console Explorer
+- [✔] Codedex Console Fundamentals
+​
+**Reflect**
+- [✔] Visual Notes: Variables and Strings
+​
+**Build**
+- [ ] The Setup
+- [✔] The Behavioral Layer
+​
+---
+
 # Learning Log
 ​
 ## Week 1
 ​
 ### What I Learned
 <!-- What concepts clicked for you? What was new? -->
-The only new thing for me is Github, Im still learning it and not quite sure about everything.
-​
+​Some of this week built on things I already knew, but it helped me connect them better. I’m starting to understand how JavaScript actually makes things respond instead of just existing.
+
+I also keep having to remind myself that var isn’t really used anymore and that let and const are standard now.
 ​
 ### What Was Hard
 <!-- What frustrated you? What didn't make sense? -->
-​I did'nt get really get fustrated with anything other then not knowing how to link Github, still dont know exactly.
+​Sometimes I overthink things and forget what something does until I see it working in the browser. When I’m just reading code, it doesn’t always fully stick. Once I test it though, it makes more sense.
 ​
 ### How I Used AI
 <!-- Did you use Copilot, ChatGPT, etc.? How did it help or not help? -->
-​I didn't use any AI for this, this is stuff I already knew coming into the class. I did use Wschools a little though
+​I used AI mostly when I wanted to implement something extra, like sound effects or falling hearts. It helped me figure out structure and logic, especially when I didn’t know where to start.
 ​
 ### What's Still Unclear
 <!-- What questions do you still have? What needs more practice? -->
-​I just need to get use to Github and will need help with the Github links.
+​Mostly GitHub terminology and flow. I need repetition with it before it feels natural.
 ​
-### Work Completed (Week 0)
-​
-**Engage**
-- [x] Portfolio Audit
-​
-**Learn**
-- [x] Console Explorer
-- [x] Codedex Console Fundamentals
-​
-**Reflect**
-- [x] Visual Notes: Variables and Strings
-​
-**Build**
-- [ ] The Setup
-- [x] The Behavioral Layer
-​
----
 
-### Week 1: Systems That Respond
-## Week 1
+### Work Completed (Week 1)
+
+**Engage**
+- [✔] VS Code Theme Setup
+
+**Learn**
+- [✔] Codedex.io Variables
+- [✔] HTML Academy 
+
+**Practice**
+- [✔] The Story Teller
+
+**Build**
+- [✔] Portfolio Migration
+- [✔] Portfolio in Figma + Style Tile
+
+**Reflect**
+- [✔] Visual Notes: Week 1---
+
+ # Learning Log
+​
+## Week 2
 ​
 ### What I Learned
-I know some basic JavaScript so I understood some of that, I still struggle with some concepts in my head but that is just my ADHD, when I see it clicks. Its Just remembering
-I also forget Var isnt a thing anymore and its LET.
+<!-- What concepts clicked for you? What was new? -->
+​This week I learned how to use variables in Figma in a more serious way. Not just colors thrown onto a page, but actual systems. It made me think more about consistency and how design decisions can scale, especially if multiple people are working on something.
+​
+### What Was Hard
+<!-- What frustrated you? What didn't make sense? -->
+​Nothing felt overwhelming. I’m getting more used to GitHub, and when I get stuck I’ve been researching on my own before asking 
+for help.
+​
+### How I Used AI
+<!-- Did you use Copilot, ChatGPT, etc.? How did it help or not help? -->
+​I used AI to help generate opposite color values for my light mode. It made the process faster when I needed color adjustments that still felt balanced.
+​
+### What's Still Unclear
+<!-- What questions do you still have? What needs more practice? -->
+​Nothing major right now. I feel pretty steady this week.
+​
+
+### Work Completed (Week 2)
+
+**Engage**
+- [✔] VS Code Theme Setup
+
+**Learn**
+- [✔] Codedex.io Conditionals
+- [✔] figma variables
+
+**Practice**
+- [✔] The Switch
+
+**Build**
+- [✔] The Foundation
+- [✔] Portfolio in Figma + Style Tile
+
+**Reflect**
+- [✔] Visual Notes: Week 2---
+
+# Learning Log
+​
+## Week 3
+​
+### What I Learned
+<!-- Design tokens, state vs appearance, system preference, persistence -->
+​I learned how to move my Figma variables into CSS and actually use them properly. Making light and dark mode work felt really cool, especially adding a save state so the theme stays when you come back. That made it feel more real and less like a class project.
+​
+### What Was Hard
+<!-- What broke, confused you, or took time to understand -->
+​It wasn’t hard, just a little confusing at first understanding what the number values meant in color variables and how everything connects.
+​
+### How I Used AI
+<!-- Copilot, ChatGPT, etc. What you asked and why -->
+​I used AI to help implement the save state with localStorage and to add an icon to the toggle button.
+​
+### What's Still Unclear
+<!-- Questions that remain -->
+​Nothing at the moment.
+​
+
+### Work Completed (Week 3)
+
+**Design Tokens**
+- [✔] variables.css exists
+- [✔] Color tokens defined
+- [✔] Typography tokens defined
+- [✔] Spacing tokens defined
+- [✔] Tokens used in CSS (no hardcoded values)
+
+**Theme System**
+- [✔] Uses data-theme on <html>
+- [✔] Toggle feedback is immediate
+
+**Persistence & Preference**
+- [✔] Theme saved to localStorage
+- [✔] Theme persists on refresh
+- [✔] System preference used on first visit
+
+**Deployment**
+- [✔] Deployed to GitHub Pages
+- [✔] Repository is public
+
+# Learning Log
+​
+## Week 4
+​
+### What I Learned
+<!-- SVG's, dropdown, svg paths -->
+​This week I learned that SVGs are basically just code, which kind of changed how I see them. Before, I thought of them more like design assets. Now I see that I can control every point and path if I understand what I’m doing.
+
+I also learned how to make SVGs interactive, which made them feel way more powerful.
+​
+### What Was Hard
+<!-- What broke, confused you, or took time to understand -->
+​Understanding SVG paths was confusing at first. The letters and numbers felt random until I started editing small values and seeing what changed. Once I experimented more, it started to click.
+
+I don’t think I’ll be an SVG expert any time soon, but I’m not scared of them anymore.
+​
+### How I Used AI
+<!-- Copilot, ChatGPT, etc. What you asked and why -->
+​I used AI to break down sections of SVG code and explain what each part did. That helped me connect the visual result to the 
+actual code.
+​
+### What's Still Unclear
+<!-- Questions that remain -->
+​I still feel like complex SVG paths would be hard to write from scratch without a reference. I understand them more now, but I’ll need more practice to feel confident.
+​
+## Week 6/7
+​
+### What I Learned
+<!-- SVG's, dropdown, svg paths -->
+I learned a lot about how SVGs actually work instead of just copying them from somewhere and hoping for the best. I understand paths better now and how small changes in the path data can completely change the shape. I also got more comfortable working with dropdowns and connecting them to functionality instead of just styling them.
+
+I feel like I finally understand that SVGs are not just “images” but code. That shift kind of changed how I look at them. It made me realize I have way more control than I thought.
 ​
 ​
 ### What Was Hard
-The only thing that fustrates me is that I get lost in my own head sometimes and forget what things mean or do untill im actually doing it.
-​
+<!-- What broke, confused you, or took time to understand -->
+​Honestly, figuring out why things were breaking was the hardest part. Sometimes one tiny mistake in the SVG path would mess everything up and I had no idea why. Debugging took way longer than I expected.
 ​
 ### How I Used AI
-I use ai when I really want something like how to impliment sound, or Falling hearts.
-​
+<!-- Copilot, ChatGPT, etc. What you asked and why -->
+​I asked it to explain concepts in simpler terms, especially for SVG paths. Sometimes I just needed it broken down in a way that made more sense to me. I tried to understand what it changed and why.
 ​
 ### What's Still Unclear
-I still just need more practice with Github and just remembering terms.
-​
-### Work Completed (Week 1)
-​
-**Engage**
-- [x] Portfolio Audit
-​
-**Learn**
-- [x] Console Explorer
-- [x] Codedex Console Fundamentals
-​
-**Reflect**
-- [x] Visual Notes: Variables and Strings
-​
-**Build**
-- [x] The Setup
-- [x] The Behavioral Layer (still working on it)
+<!-- Questions that remain -->
+I still feel a little unsure about writing complex SVG paths from scratch without looking at a reference. I understand them better, but I don’t feel fully confident yet.
 
-### Week 2: Remembering Choices
-*Coming soon...*
+I also want to get more comfortable debugging on my own before immediately asking for help. I can do it, but it still takes me a while to fully trust myself.
 
----
+
 
 ## Quick Links
 
