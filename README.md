@@ -216,8 +216,10 @@ actual code.
 <!-- Questions that remain -->
 ​I still feel like complex SVG paths would be hard to write from scratch without a reference. I understand them more now, but I’ll need more practice to feel confident.
 ​
-## Week 6/7
+# Learning Log
 ​
+## Week 5
+
 ### What I Learned
 <!-- SVG's, dropdown, svg paths -->
 I learned a lot about how SVGs actually work instead of just copying them from somewhere and hoping for the best. I understand paths better now and how small changes in the path data can completely change the shape. I also got more comfortable working with dropdowns and connecting them to functionality instead of just styling them.
