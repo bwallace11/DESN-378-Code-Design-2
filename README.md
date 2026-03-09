@@ -241,6 +241,45 @@ I still feel a little unsure about writing complex SVG paths from scratch withou
 
 I also want to get more comfortable debugging on my own before immediately asking for help. I can do it, but it still takes me a while to fully trust myself.
 
+# Learning Log
+
+## Week 6
+
+### What I Learned
+<!-- SVG's, dropdown, svg paths -->
+​This week I learned how SVGs work and why they are useful for web design and animations. I also learned how dropdown menus function and started understanding how SVG paths control shapes.
+​
+### What Was Hard
+<!-- What broke, confused you, or took time to understand -->
+​SVG paths were confusing because the letters and numbers are hard to read at first. Debugging dropdown behavior also took time because small mistakes in the code stopped things from working.
+​
+### How I Used AI
+<!-- Copilot, ChatGPT, etc. What you asked and why -->
+​I used AI to help explain SVG paths and how the commands work. I also used it to help troubleshoot dropdown code when something was not working.
+​
+### What's Still Unclear
+<!-- Questions that remain -->
+I still need more practice creating SVG paths from scratch. I also want to learn more about how SVG animations work with JavaScript or GSAP.
+
+# Learning Log
+​
+## Week 7
+​
+### What I Learned
+This week I learned how GSAP works and how it can be used to animate elements on a webpage. I also learned how ScrollTrigger connects animations to the user's scroll so things move as you move down the page.
+​
+
+### What Was Hard
+<!-- What broke, confused you, or took time to understand -->
+​Understanding how the timing and trigger points worked with ScrollTrigger was confusing at first. It took some trial and error to get the animations to start and stop where I wanted.
+​
+### How I Used AI
+<!-- Copilot, ChatGPT, etc. What you asked and why -->
+​I used AI to help explain how GSAP and ScrollTrigger work and how to structure the code correctly. I also used it to help fix animation issues when things were not triggering the way I expected.
+​
+### What's Still Unclear
+<!-- Questions that remain -->
+I still want to understand more about controlling multiple animations at once with GSAP timelines. I also want more practice making smoother scroll animations and effects.
 
 
 ## Quick Links
